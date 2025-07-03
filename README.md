@@ -70,19 +70,7 @@ I implemented this project with the following considerations:
 - **Robust Error Handling**: Comprehensive error checking and user-friendly error messages
 - **Efficient API Usage**: Respectful use of the GitHub API with proper error handling
 
-## Contributing
-
-Feel free to fork this project and submit pull requests for any improvements or bug fixes.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Resources
 
 - [GitHub API Documentation](https://docs.github.com/en/rest)
 - [GitHub Events API](https://docs.github.com/en/rest/activity/events)
-
----
-
-*This project was created as part of my journey to improve my programming skills and learn more about API integration and CLI development.*
