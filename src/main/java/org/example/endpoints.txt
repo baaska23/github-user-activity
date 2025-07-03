@@ -1,0 +1,26 @@
+User Profile: GET /users/{username}
+Retrieves public information about a user, such as their name, bio, location, and public repository count.
+
+User Repositories: GET /users/{username}/repos
+Lists all public repositories owned by the user.
+
+User Followers: GET /users/{username}/followers
+Returns a list of users following the specified user.
+
+User Following: GET /users/{username}/following
+Lists users that the specified user is following.
+
+User Gists: GET /users/{username}/gists
+Retrieves a list of public gists created by the user.
+
+User Starred Repositories: GET /users/{username}/starred
+Lists repositories the user has starred.
+
+User Subscriptions: GET /users/{username}/subscriptions
+Shows repositories the user is watching.
+
+User Organizations: GET /users/{username}/orgs
+Lists organizations the user is a member of.
+
+User Received Events: GET /users/{username}/received_events
+Retrieves public events performed by the user or related to their activity (e.g., issues or comments on their repositories).
