@@ -1,11 +1,10 @@
 package org.example;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserActivityManagerApplication {
     UserActivityService service = new UserActivityService();
-    
+
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         UserActivityManagerApplication app = new UserActivityManagerApplication();
@@ -21,16 +20,19 @@ public class UserActivityManagerApplication {
         }
     }
 
-    public void readInput(String command) throws Exception{
-        if (command.startsWith("github-activity")){
+    public void readInput(String command) throws Exception {
+        if (command.startsWith("github-activity")) {
             String[] parts = command.trim().split("\\s+");
-            System.out.println(Arrays.toString(parts));
-            if(parts.length >= 2){
+
+            if (parts.length >= 2) {
                 String username = parts[1];
                 String branch = (parts.length >= 3) ? parts[2] : "events";
-                service.getApi(username, branch);
+                service.displayStat(username, branch);
+                service.displayCountByEventType(username, branch, "PushEvent");
+                service.displayCountByEventType(username, branch, "IssuesEvent");
+                service.displayCountByEventType(username, branch, "WatchEvent");
             } else {
-                System.out.println("Try again");
+                System.out.println("Alert: github-activity <username> <branch>");
             }
         }
     }

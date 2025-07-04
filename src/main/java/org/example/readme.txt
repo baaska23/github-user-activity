@@ -12,12 +12,16 @@ Fetch the recent activity of the specified GitHub user using the GitHub API. You
 
 Display the fetched activity in the terminal.
 Output:
-- Pushed 3 commits to kamranahmedse/developer-roadmap
-- Opened a new issue in kamranahmedse/developer-roadmap
-- Starred kamranahmedse/developer-roadmap
+- Pushed 3 commits to kamranahmedse/developer-roadmap (PushEvent)
+- Opened a new issue in kamranahmedse/developer-roadmap (IssuesEvent)
+- Starred kamranahmedse/developer-roadmap (WatchEvent)
 - ...
 You can learn more about the GitHub API here.
 Handle errors gracefully, such as invalid usernames or API failures.
 Use a programming language of your choice to build this project.
 Do not use any external libraries or frameworks to fetch the GitHub activity.
-If you are looking to build a more advanced version of this project, you can consider adding features like filtering the activity by event type, displaying the activity in a more structured format, or caching the fetched data to improve performance. You can also explore other endpoints of the GitHub API to fetch additional information about the user or their repositories.
+
+If you are looking to build a more advanced version of this project, you can consider adding features like:
+filtering the activity by event type,
+displaying the activity in a more structured format,
+caching the fetched data to improve performance.
